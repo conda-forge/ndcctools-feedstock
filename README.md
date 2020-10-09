@@ -5,9 +5,13 @@ Home: http://ccl.cse.nd.edu/
 
 Package license: GPL-2.0-only
 
-Feedstock license: BSD-3-Clause
+Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/ndcctools-feedstock/blob/master/LICENSE.txt)
 
 Summary: The Cooperative Computing Tools contains Chirp, Makeflow, JX, and Work Queue.
+
+Development: https://github.com/cooperative-computing-lab/cctools
+
+Documentation: https://cctools.readthedocs.io
 
 The Cooperative Computing Tools (cctools) are a collection of programs that
 enable large scale distributed computing on systems such as clusters,
