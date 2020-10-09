@@ -19,10 +19,9 @@ source:
   sha256: {{ src_checksum }}
 
 build:
-  number: 0
+  number: 1
   skip: true  # [win]
   skip: true  # [osx and py==27]
-  skip: true  # [osx]
   skip: true  # [python_impl=='pypy']
   rpaths:
     - lib/
