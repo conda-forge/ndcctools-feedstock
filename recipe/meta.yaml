@@ -19,7 +19,7 @@ source:
   sha256: {{ src_checksum }}
 
 build:
-  number: 0
+  number: 1
   skip: true  # [win]
   skip: true  # [osx and py==27]
   skip: true  # [osx and py==36]
@@ -37,9 +37,11 @@ requirements:
   host:
     - python
     - zlib
+    - libnsl  # [not osx]
   run:
     - python
     - zlib
+    - libnsl  # [not osx]
     - conda-pack
 
 test:
