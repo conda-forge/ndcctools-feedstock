@@ -1,2 +1,2 @@
 channel_targets:
-    - conda-forge main
+    - conda-forge ndcctools_rc
