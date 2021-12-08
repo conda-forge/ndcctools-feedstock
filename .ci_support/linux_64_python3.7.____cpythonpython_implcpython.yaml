@@ -7,13 +7,15 @@ cdt_name:
 channel_sources:
 - conda-forge
 channel_targets:
-- conda-forge main
+- conda-forge ndcctools_rc
 cxx_compiler:
 - gxx
 cxx_compiler_version:
 - '9'
 docker_image:
-- quay.io/condaforge/linux-anvil-comp7
+- quay.io/condaforge/linux-anvil-cos7-x86_64
+openssl:
+- 1.1.1
 pin_run_as_build:
   python:
     min_pin: x.x
@@ -29,8 +31,6 @@ target_platform:
 zip_keys:
 - - c_compiler_version
   - cxx_compiler_version
-- - cdt_name
-  - docker_image
 - - python
   - python_impl
 zlib:
