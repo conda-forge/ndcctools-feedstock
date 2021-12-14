@@ -8,18 +8,18 @@
 
 {% set name = "ndcctools" %}
 {% set version = "7.4.1" %}
-{% set src_checksum = "c93c26f849a5d0115f47789cda3b4729e26b98de14ee27ca133544c7b2543a14" %}
+{% set src_checksum = "6e9bdd8d1fee8df8e49044780876931267a7c8b43a37e9f14f41be2084a96b03" %}
 
 package:
   name: {{ name|lower }}
   version: {{ version }}
 
 source:
-  url: http://ccl.cse.nd.edu/software/files/cctools-{{ version }}-source.tar.gz
+  url: http://ccl.cse.nd.edu/software/files/cctools-{{ version }}b1-source.tar.gz
   sha256: {{ src_checksum }}
 
 build:
-  number: 0
+  number: 1
   skip: true  # [win]
   skip: true  # [osx and py==27]
   skip: true  # [osx and py==36]
@@ -34,6 +34,7 @@ requirements:
     - m4
     - swig
     - make
+    - libopenssl-static  # [not osx]
   host:
     - python
     - zlib
