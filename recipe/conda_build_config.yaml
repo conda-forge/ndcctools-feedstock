@@ -1,4 +1,4 @@
 #  for rc versions: - conda-forge ndcctools_rc
 #  for stable versions: - conda-forge main
 channel_targets:
-    - conda-forge main
+    - conda-forge ndcctools_rc
