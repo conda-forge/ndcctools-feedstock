@@ -1,4 +1,5 @@
 #  for rc versions: - conda-forge ndcctools_rc
 #  for stable versions: - conda-forge main
+#  install command for rc versions: conda search -c conda-forge/label/ndcctools_rc -c conda-forge  ndcctools
 channel_targets:
-    - conda-forge ndcctools_rc
+    - conda-forge main
