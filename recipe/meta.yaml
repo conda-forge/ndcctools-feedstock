@@ -7,8 +7,8 @@
 # anaconda called cctools.
 
 {% set name = "ndcctools" %}
-{% set version = "7.4.6" %}
-{% set src_checksum = "8cbc93fee9fa11445b4f0ca1f1c7daaa6379aacca2ad0e975139ee75a1b1cccb" %}
+{% set version = "7.4.7" %}
+{% set src_checksum = "112aa9e158c74677320d775340950a7dcca017d8272236506f55a82f40c7561e" %}
 
 package:
   name: {{ name|lower }}
