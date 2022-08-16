@@ -8,7 +8,7 @@
 
 {% set name = "ndcctools" %}
 {% set version = "7.4.11" %}
-{% set src_checksum = "9356dad32d055e7ce6ba697f8387f1ffcd40cc24218b68a61fbd2a847005ac60" %}
+{% set src_checksum = "0397f7193b6593956c0418a16b8218ca041bf26583acdfc1fb749ae5f2fcfbe7" %}
 
 package:
   name: {{ name|lower }}
@@ -19,7 +19,7 @@ source:
   sha256: {{ src_checksum }}
 
 build:
-  number: 0
+  number: 1
   skip: true  # [win]
   skip: true  # [osx and py==27]
   skip: true  # [osx and py==36]
