@@ -1,5 +1,5 @@
 
-DISABLED_SYS=$(echo --without-system-{parrot,prune,umbrella,weaver})
+DISABLED_SYS=$(echo --without-system-{parrot,prune,umbrella,weaver,dataswarm})
 DISABLED_LIB=$(echo --with-{readline,fuse}-path\ no)
 
 
