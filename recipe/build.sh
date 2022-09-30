@@ -1,3 +1,4 @@
+#! /bin/bash
 
 DISABLED_SYS=$(echo --without-system-{parrot,prune,umbrella,weaver})
 DISABLED_LIB=$(echo --with-{readline,fuse}-path\ no)
@@ -19,12 +20,15 @@ cat config.mk
 make -j${CPU_COUNT}
 make install
 
-if ! make test
+if [[ "${CONDA_BUILD_CROSS_COMPILATION}" != 1 ]]
 then
-    echo ==cctools.test.fail==
-    cat cctools.test.fail
-    exit 1
-else
-    exit 0
+    if ! make test
+    then
+        echo ==cctools.test.fail==
+        cat cctools.test.fail
+        exit 1
+    else
+        exit 0
+    fi
 fi
 
