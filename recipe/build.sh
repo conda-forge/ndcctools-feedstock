@@ -1,7 +1,7 @@
 #! /bin/bash
 
 DISABLED_SYS=$(echo --without-system-{parrot,prune,umbrella,weaver})
-DISABLED_LIB=$(echo --with-{readline,fuse}-path\ no)
+DISABLED_LIB=$(echo --with-{readline,fuse,perl}-path\ no)
 
 
 if [[ "$PY3K" == 1 ]]; then
@@ -10,9 +10,7 @@ else
     PYTHON_OPT="--with-python2-path"
 fi
 
-PERL_PATH="no"
-
-./configure --debug --prefix "${PREFIX}" --with-base-dir "${PREFIX}" ${PYTHON_OPT} "${PREFIX}" --with-perl-path "${PERL_PATH}" ${DISABLED_LIB} ${DISABLED_SYS}
+./configure --debug --prefix "${PREFIX}" --with-base-dir "${PREFIX}" ${PYTHON_OPT} "${PREFIX}" ${DISABLED_LIB} ${DISABLED_SYS}
 
 echo ==config.mk==
 cat config.mk
