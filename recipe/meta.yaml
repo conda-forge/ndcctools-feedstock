@@ -7,8 +7,8 @@
 # anaconda called cctools.
 
 {% set name = "ndcctools" %}
-{% set version = "7.4.16" %}
-{% set src_checksum = "40230c613db0244d7d0e5bac56637c3327e0e81ea9988a6844457b994ae2f409" %}
+{% set version = "7.5.0" %}
+{% set src_checksum = "12bdfceab9b754f009b8736c47ee06134c6f65e6c96f020f41341a7d9b7ed674" %}
 
 package:
   name: {{ name|lower }}
@@ -41,6 +41,8 @@ requirements:
     - libopenssl-static
     - readline
     - openssl
+    - dill
+    - conda-pack
   run:
     - python
     - zlib
@@ -53,16 +55,19 @@ requirements:
 test:
   imports:
     - work_queue
+    - taskvine
   commands:
     - makeflow -h
     - work_queue_worker -h
     - work_queue_factory -h
+    - vine_worker -h
+    - vine_factory -h
 
 about:
   home: http://ccl.cse.nd.edu/
   license: GPL-2.0-only
   license_file: COPYING
-  summary: The Cooperative Computing Tools contains Chirp, Makeflow, JX, and Work Queue.
+  summary: The Cooperative Computing Tools contains Chirp, Makeflow, JX, and Work Queue, TaskVine.
   description: |
     The Cooperative Computing Tools (cctools) are a collection of programs that
     enable large scale distributed computing on systems such as clusters,
