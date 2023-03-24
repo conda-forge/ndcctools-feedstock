@@ -34,6 +34,13 @@ requirements:
     - make
     - python                              # [build_platform != target_platform]
     - cross-python_{{ target_platform }}  # [build_platform != target_platform]
+    - zlib
+    - libnsl  # [not osx]
+    - libopenssl-static
+    - readline
+    - openssl
+    - dill
+    - conda-pack
   host:
     - python
     - zlib
