@@ -7,8 +7,8 @@
 # anaconda called cctools.
 
 {% set name = "ndcctools" %}
-{% set version = "7.5.0" %}
-{% set src_checksum = "12bdfceab9b754f009b8736c47ee06134c6f65e6c96f020f41341a7d9b7ed674" %}
+{% set version = "test" %}
+{% set src_checksum = "fc32781cf52931933c457004a60ff703ee769fc4abc637815976de206565b5ae" %}
 
 package:
   name: {{ name|lower }}
@@ -58,6 +58,7 @@ requirements:
     - readline
     - dill
     - conda-pack
+    - conda
 
 test:
   imports:
