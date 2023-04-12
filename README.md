@@ -1,11 +1,11 @@
-About ndcctools
-===============
+About ndcctools-feedstock
+=========================
+
+Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/ndcctools-feedstock/blob/main/LICENSE.txt)
 
 Home: http://ccl.cse.nd.edu/
 
 Package license: GPL-2.0-only
-
-Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/ndcctools-feedstock/blob/main/LICENSE.txt)
 
 Summary: The Cooperative Computing Tools contains Chirp, Makeflow, JX, and Work Queue, TaskVine.
 
