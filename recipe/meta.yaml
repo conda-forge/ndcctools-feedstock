@@ -7,8 +7,8 @@
 # anaconda called cctools.
 
 {% set name = "ndcctools" %}
-{% set version = "7.5.2" %}
-{% set src_checksum = "34a3a6eddfd3927085373d14210a773c923e8eaf9bce69b9819cb388af4e7b3e" %}
+{% set version = "7.5.3rc1" %}
+{% set src_checksum = "ce7ac9f65d488cd396c6bc3c24d15f71528c9a675e15f2164dbb252dc7100841" %}
 
 package:
   name: {{ name|lower }}
@@ -64,6 +64,8 @@ test:
   imports:
     - work_queue
     - taskvine
+    - ndcctools.work_queue
+    - ndcctools.taskvine
   commands:
     - makeflow -h
     - work_queue_worker -h
