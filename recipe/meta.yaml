@@ -7,8 +7,8 @@
 # anaconda called cctools.
 
 {% set name = "ndcctools" %}
-{% set version = "7.5.3" %}
-{% set src_checksum = "ebb19a6df0172ba00df0a21bfe6b3e4b6d64d2a971016d0f898a14ac4b0288f8" %}
+{% set version = "7.5.4" %}
+{% set src_checksum = "a1f518ac68ce95fa8b88054d78fd5aa6aff18bf3f88f6f5a8eb736c696352f58" %}
 
 package:
   name: {{ name|lower }}
@@ -39,7 +39,7 @@ requirements:
     - libopenssl-static
     - readline
     - openssl
-    - dill
+    - cloudpickle
     - conda-pack
   host:
     - python
@@ -48,7 +48,7 @@ requirements:
     - libopenssl-static
     - readline
     - openssl
-    - dill
+    - cloudpickle
     - conda-pack
   run:
     - python
@@ -56,7 +56,7 @@ requirements:
     - libnsl  # [not osx]
     - openssl
     - readline
-    - dill
+    - cloudpickle
     - conda-pack
     - conda
 
