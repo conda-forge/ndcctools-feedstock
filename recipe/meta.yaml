@@ -19,7 +19,7 @@ source:
   sha256: {{ src_checksum }}
 
 build:
-  number: 0
+  number: 1
   skip: true  # [win]
   skip: true  # [python_impl=='pypy']
   rpaths:
@@ -40,6 +40,7 @@ requirements:
     - readline
     - openssl
     - cloudpickle
+    - packaging
     - conda-pack
   host:
     - python
@@ -59,6 +60,7 @@ requirements:
     - cloudpickle
     - conda-pack
     - conda
+    - packaging
 
 test:
   imports:
