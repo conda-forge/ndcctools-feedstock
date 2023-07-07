@@ -7,7 +7,7 @@ Home: http://ccl.cse.nd.edu/
 
 Package license: GPL-2.0-only
 
-Summary: The Cooperative Computing Tools contains Chirp, Makeflow, JX, and Work Queue, TaskVine.
+Summary: Tools for large scale distributed computing.
 
 Development: https://github.com/cooperative-computing-lab/cctools
 
