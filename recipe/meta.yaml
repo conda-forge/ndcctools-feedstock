@@ -1,14 +1,14 @@
 # Note to cctools maintainers:
 # When updating cctools versions, only the version and src_checksum variables
 # should be modified.
-# Get the checksum of the cctools-VERSION-source.tar.gz tarball as:
-# openssl sha256  cctools-VERSION-source.tar.gz
+# Get the checksum of the tarball as:
+# curl -L https://github.com/cooperative-computing-lab/cctools/archive/refs/tags/release/VERSION.tar.gz | openssl sha256
 # Note we use the name "ndcctools" as there is already another project in
 # anaconda called cctools.
 
 {% set name = "ndcctools" %}
 {% set version = "7.6.2" %}
-{% set src_checksum = "93643c95366c5e12b392a1b880b231208298709b1654978001e6d168ae24b9f4" %}
+{% set src_checksum = "1f0a96769999e9b571f3f35086062d9f10e82e2810d6ed64f1f788842ec62665" %}
 
 package:
   name: {{ name|lower }}
