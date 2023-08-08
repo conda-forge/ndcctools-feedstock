@@ -8,7 +8,7 @@
 
 {% set name = "ndcctools" %}
 {% set version = "7.6.2" %}
-{% set src_checksum = "1f0a96769999e9b571f3f35086062d9f10e82e2810d6ed64f1f788842ec62665" %}
+{% set src_checksum = "2b5ce0e3210ceb184d15401683bc60587069ec7fcf8db86e80b9606d89e5acef" %}
 
 package:
   name: {{ name|lower }}
