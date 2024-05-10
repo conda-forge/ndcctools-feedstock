@@ -61,6 +61,8 @@ requirements:
     - conda-pack
     - conda
     - packaging
+    - rich
+    - threadpoolctl
 
 test:
   imports:
