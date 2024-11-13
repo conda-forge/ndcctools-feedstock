@@ -1,7 +1,7 @@
 #! /bin/bash
 
 DISABLED_SYS=$(echo --without-system-{parrot,prune,umbrella,weaver})
-DISABLED_LIB=$(echo --with-{readline,fuse,perl}-path\ no)
+DISABLED_LIB=$(echo --with-{readline,perl}-path\ no)
 
 ./configure --debug --prefix "${PREFIX}" --with-base-dir "${PREFIX}" ${DISABLED_LIB} ${DISABLED_SYS}
 
