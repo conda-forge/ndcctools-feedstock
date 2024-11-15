@@ -36,7 +36,7 @@ requirements:
     - python                              # [build_platform != target_platform]
     - cross-python_{{ target_platform }}  # [build_platform != target_platform]
     - zlib
-    - libfuse # [not osx]
+    - libfuse  # [not osx]
     - libnsl  # [not osx]
     - libopenssl-static
     - readline
@@ -47,7 +47,7 @@ requirements:
   host:
     - python
     - zlib
-    - libfuse # [not osx]
+    - libfuse  # [not osx]
     - libnsl  # [not osx]
     - libopenssl-static
     - readline
@@ -57,7 +57,7 @@ requirements:
   run:
     - python
     - zlib
-    - libfuse # [not osx]
+    - libfuse  # [not osx]
     - libnsl  # [not osx]
     - openssl
     - readline
