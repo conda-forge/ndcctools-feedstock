@@ -7,8 +7,8 @@
 # anaconda called cctools.
 
 {% set name = "ndcctools" %}
-{% set version = "7.14.3" %}
-{% set src_checksum = "73175bc02d253e5495e6ac141d1c1a1e02a81e8e389d889778bdb38864e728ac" %}
+{% set version = "7.14.4" %}
+{% set src_checksum = "fc923269d4b1269a5e7edb9ba0dddf420f09e9605835c0bb0de62d979645467d" %}
 
 package:
   name: {{ name|lower }}
@@ -19,7 +19,7 @@ source:
   sha256: {{ src_checksum }}
 
 build:
-  number: 2
+  number: 0
   skip: true  # [win or python_impl=='pypy']
   rpaths:
     - lib/
