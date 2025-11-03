@@ -7,20 +7,20 @@
 # anaconda called cctools.
 
 {% set name = "ndcctools" %}
-{% set version = "7.15.13" %}
-{% set src_checksum = "c59d5f464eff67795b4abcff37b2176d6e6ca9adf269a7944cd477e6142e12c0" %}
+{% set version = "7.15.14" %}
+{% set src_checksum = "4f7d47d11762d18b452732f3c554b714ceb174a2883af0f46a7fc0a86b5c5487" %}
 
 package:
   name: {{ name|lower }}
   version: {{ version }}
 
 source:
-  url: https://github.com/cooperative-computing-lab/cctools/archive/refs/tags/release/{{ version }}.tar.gz
+  url: https://ccl.cse.nd.edu/temp/cctools.tar.gz
   sha256: {{ src_checksum }}
 
 build:
   number: 0
-  skip: true  # [osx or win or python_impl=='pypy']
+  skip: true  # [win or python_impl=='pypy']
   rpaths:
     - lib/
 
